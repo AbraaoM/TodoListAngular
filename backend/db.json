@@ -1,0 +1,28 @@
+{
+  "group": [
+    {
+      "id": 1,
+      "title": "Um grupo"
+    },
+    {
+      "id": 2,
+      "title": "Um grupo"
+    }
+  ],
+  "task": [
+    {
+      "id": 1,
+      "groupId": 1,
+      "title": "Uma task",
+      "creationTime": "B",
+      "conclusionTime": "F"
+    },
+    {
+      "id": 2,
+      "groupId": 1,
+      "title": "Duas tasks",
+      "creationTime": "B",
+      "conclusionTime": "F"
+    }
+  ]
+}
