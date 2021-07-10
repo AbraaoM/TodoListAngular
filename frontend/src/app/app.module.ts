@@ -12,6 +12,7 @@ import { InfosComponent } from './views/infos/infos.component';
 import { TaskElementComponent } from './components/task/task-element/task-element.component';
 import { CreateGroupComponent } from './components/group/create-group/create-group.component';
 import { UpdateGroupComponent } from './components/group/update-group/update-group.component';
+import { UpdateTaskComponent } from './components/task/update-task/update-task.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { UpdateGroupComponent } from './components/group/update-group/update-gro
     InfosComponent,
     TaskElementComponent,
     CreateGroupComponent,
-    UpdateGroupComponent
+    UpdateGroupComponent,
+    UpdateTaskComponent
   ],
   imports: [
     BrowserModule,
