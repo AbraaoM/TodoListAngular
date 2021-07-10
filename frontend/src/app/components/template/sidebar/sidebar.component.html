@@ -1,1 +1,26 @@
-<p>sidebar works!</p>
+<div class="sidebar bg-light">
+  <div class="brand">
+    Advanced Todo List
+  </div>
+  <div class="navigator">
+    <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills" orientation="vertical">
+      <li ngbNavItem="top">
+        <a ngbNavLink>Top</a>
+
+      </li>
+      <li ngbNavItem="middle">
+        <a ngbNavLink>Middle</a>
+
+      </li>
+      <li ngbNavItem="bottom">
+        <a ngbNavLink>Bottom</a>
+
+      </li>
+    </ul>
+
+    <div [ngbNavOutlet]="nav" class="ml-4"></div>
+  </div>
+</div>
+
+
+
