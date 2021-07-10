@@ -1,3 +1,4 @@
+import { IconsModule } from './icons/icons.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -16,7 +17,8 @@ import { GroupElementComponent } from './components/group/group-element/group-el
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    IconsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

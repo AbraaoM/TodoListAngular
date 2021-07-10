@@ -3,10 +3,16 @@
     Advanced Todo List
   </div>
   <div class="navigator">
-    <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills" orientation="vertical">
+    <ul ngbNav #nav="ngbNav"
+      [(activeId)]="active"
+      class="nav-pills"
+      orientation="vertical"
+    >
       <li ngbNavItem="top">
-        <a ngbNavLink>Top</a>
 
+        <a ngbNavLink>
+          <app-group-element></app-group-element>
+        </a>
       </li>
       <li ngbNavItem="middle">
         <a ngbNavLink>Middle</a>

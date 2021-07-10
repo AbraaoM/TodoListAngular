@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./group-element.component.css']
 })
 export class GroupElementComponent implements OnInit {
+  groupTitle: string = 'Título do grupo'
 
   constructor() { }
 
