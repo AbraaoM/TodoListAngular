@@ -10,6 +10,8 @@ import { GroupElementComponent } from './components/group/group-element/group-el
 import { HomeComponent } from './views/home/home.component';
 import { InfosComponent } from './views/infos/infos.component';
 import { TaskElementComponent } from './components/task/task-element/task-element.component';
+import { CreateGroupComponent } from './components/group/create-group/create-group.component';
+import { UpdateGroupComponent } from './components/group/update-group/update-group.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { TaskElementComponent } from './components/task/task-element/task-elemen
     GroupElementComponent,
     HomeComponent,
     InfosComponent,
-    TaskElementComponent
+    TaskElementComponent,
+    CreateGroupComponent,
+    UpdateGroupComponent
   ],
   imports: [
     BrowserModule,
