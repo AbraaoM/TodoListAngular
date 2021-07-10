@@ -15,6 +15,7 @@ import { UpdateGroupComponent } from './components/group/update-group/update-gro
 import { UpdateTaskComponent } from './components/task/update-task/update-task.component';
 import { CreateTaskComponent } from './components/task/create-task/create-task.component';
 import { TaskInfosComponent } from './components/task/task-infos/task-infos.component';
+import { GroupInfosComponent } from './components/group/group-infos/group-infos.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { TaskInfosComponent } from './components/task/task-infos/task-infos.comp
     UpdateGroupComponent,
     UpdateTaskComponent,
     CreateTaskComponent,
-    TaskInfosComponent
+    TaskInfosComponent,
+    GroupInfosComponent
   ],
   imports: [
     BrowserModule,
