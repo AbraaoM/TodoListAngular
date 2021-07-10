@@ -13,6 +13,7 @@ import { TaskElementComponent } from './components/task/task-element/task-elemen
 import { CreateGroupComponent } from './components/group/create-group/create-group.component';
 import { UpdateGroupComponent } from './components/group/update-group/update-group.component';
 import { UpdateTaskComponent } from './components/task/update-task/update-task.component';
+import { CreateTaskComponent } from './components/task/create-task/create-task.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { UpdateTaskComponent } from './components/task/update-task/update-task.c
     TaskElementComponent,
     CreateGroupComponent,
     UpdateGroupComponent,
-    UpdateTaskComponent
+    UpdateTaskComponent,
+    CreateTaskComponent
   ],
   imports: [
     BrowserModule,
