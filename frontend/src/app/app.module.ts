@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SidebarComponent } from './components/template/sidebar/sidebar.component';
+import { GroupElementComponent } from './components/group/group-element/group-element.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SidebarComponent
+    SidebarComponent,
+    GroupElementComponent
   ],
   imports: [
     BrowserModule,
