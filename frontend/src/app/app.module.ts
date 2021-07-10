@@ -9,6 +9,7 @@ import { SidebarComponent } from './components/template/sidebar/sidebar.componen
 import { GroupElementComponent } from './components/group/group-element/group-element.component';
 import { HomeComponent } from './views/home/home.component';
 import { InfosComponent } from './views/infos/infos.component';
+import { TaskElementComponent } from './components/task/task-element/task-element.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { InfosComponent } from './views/infos/infos.component';
     SidebarComponent,
     GroupElementComponent,
     HomeComponent,
-    InfosComponent
+    InfosComponent,
+    TaskElementComponent
   ],
   imports: [
     BrowserModule,
