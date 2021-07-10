@@ -2,6 +2,11 @@
   <div class="brand">
     Advanced Todo List
   </div>
+  <div class="d-flex justify-content-center p-3"
+  routerLink="/group/create"
+  >
+    <button type="button" class="btn btn-primary">Novo Grupo</button>
+  </div>
   <div class="navigator">
     <ul ngbNav #nav="ngbNav"
       [(activeId)]="active"
@@ -10,7 +15,7 @@
     >
       <li ngbNavItem="top">
 
-        <a ngbNavLink routerLink="/infos">
+        <a ngbNavLink>
           <app-group-element></app-group-element>
         </a>
       </li>

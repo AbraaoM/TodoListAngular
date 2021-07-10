@@ -1,13 +1,15 @@
 <div class="task-element d-flex align-items-center justify-content-between bg-light border border-primary rounded">
-  <div class="task-title text-primary">
+  <div class="task-title text-primary"
+    routerLink="/"
+  >
     {{taskTitle}}
   </div>
   <div
     class="text-primary d-flex justify-content-between"
     style="width: 25%; padding: 5%;"
   >
-    <bi name="trash"></bi>
-    <bi name="pen"></bi>
+    <bi name="trash" routerLink="/"></bi>
+    <bi name="pen" routerLink="/task/update"></bi>
   </div>
 
 </div>
