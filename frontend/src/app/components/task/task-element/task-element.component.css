@@ -1,0 +1,8 @@
+.task-element{
+  height: 10vh;
+  width: 50vw;
+}
+.task-title{
+  font-size: 1.2em;
+  padding: 5%;
+}

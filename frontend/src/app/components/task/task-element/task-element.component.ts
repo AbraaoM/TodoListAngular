@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./task-element.component.css']
 })
 export class TaskElementComponent implements OnInit {
-
+  taskTitle: string = 'Título de uma task'
   constructor() { }
 
   ngOnInit(): void {
