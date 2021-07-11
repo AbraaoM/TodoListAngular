@@ -1,3 +1,5 @@
+import { TaskInfosComponent } from './components/task/task-infos/task-infos.component';
+import { GroupInfosComponent } from './components/group/group-infos/group-infos.component';
 import { UpdateTaskComponent } from './components/task/update-task/update-task.component';
 import { CreateTaskComponent } from './components/task/create-task/create-task.component';
 import { CreateGroupComponent } from './components/group/create-group/create-group.component';
@@ -25,12 +27,20 @@ const routes: Routes = [
     component: CreateGroupComponent
   },
   {
+    path:"group/infos",
+    component: GroupInfosComponent
+  },
+  {
     path:"task/create",
     component: CreateTaskComponent
   },
   {
     path:"task/update",
     component: UpdateTaskComponent
+  },
+  {
+    path:"task/infos",
+    component: TaskInfosComponent
   }
 ];
 

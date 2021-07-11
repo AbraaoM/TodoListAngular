@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./group-infos.component.css']
 })
 export class GroupInfosComponent implements OnInit {
+  groupTitle: string = 'Nome do grupo'
+  nTasks: number = 0
+  nTasksMonth: number = 0
+  nTasksMorning: number = 0
+  nTasksEvening: number = 0
+  nTasksNight: number = 0
 
   constructor() { }
 

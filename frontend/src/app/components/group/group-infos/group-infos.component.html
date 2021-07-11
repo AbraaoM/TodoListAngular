@@ -1,1 +1,44 @@
-<p>group-infos works!</p>
+<div class="group-name text-center font-weight-bold p-3">
+  {{groupTitle}}
+</div>
+<div class="info-container d-flex">
+
+  <div class="task p-3 w-50">
+
+    <div class="d-flex justify-content-center">
+      <button type="button"
+        class="btn btn-primary"
+        routerLink="/task/create"
+      >
+        Nova Task
+      </button>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <app-task-element></app-task-element>
+      </li>
+      <li class="list-group-item">
+        <app-task-element></app-task-element>
+      </li>
+      <li class="list-group-item">
+        <app-task-element></app-task-element>
+      </li>
+      <li class="list-group-item">
+        <app-task-element></app-task-element>
+      </li>
+      <li class="list-group-item">
+        <app-task-element></app-task-element>
+      </li>
+    </ul>
+  </div>
+  <div class="w-50">
+
+    <ul class="list-unstyled">
+      <li><strong>{{nTasks}}</strong> tarefas</li>
+      <li>Foram criadas <strong>{{nTasksMonth}}</strong> neste mês.</li>
+      <li><strong>{{nTasksMorning}}</strong> tarefas criadas pela manhã.</li>
+      <li><strong>{{nTasksEvening}}</strong> tarefas criadas pela tarde.</li>
+      <li><strong>{{nTasksNight}}</strong> tarefas foram criadas pela noite.</li>
+    </ul>
+  </div>
+</div>

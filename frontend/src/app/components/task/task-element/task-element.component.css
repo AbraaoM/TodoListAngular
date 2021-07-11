@@ -1,6 +1,6 @@
 .task-element{
   height: 10vh;
-  width: 50vw;
+  width: 100%;
 }
 .task-title{
   font-size: 1.2em;
