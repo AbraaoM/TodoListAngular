@@ -17,6 +17,7 @@ import { CreateTaskComponent } from './components/task/create-task/create-task.c
 import { TaskInfosComponent } from './components/task/task-infos/task-infos.component';
 import { GroupInfosComponent } from './components/group/group-infos/group-infos.component';
 import { HttpClientModule } from  '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { HttpClientModule } from  '@angular/common/http';
     NgbModule,
     IconsModule,
     HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

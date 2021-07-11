@@ -27,7 +27,7 @@ const routes: Routes = [
     component: CreateGroupComponent
   },
   {
-    path:"group/infos",
+    path:"group/infos/:id",
     component: GroupInfosComponent
   },
   {
@@ -39,7 +39,7 @@ const routes: Routes = [
     component: UpdateTaskComponent
   },
   {
-    path:"task/infos",
+    path:"task/infos/:id",
     component: TaskInfosComponent
   }
 ];

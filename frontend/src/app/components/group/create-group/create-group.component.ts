@@ -1,4 +1,7 @@
+import { GroupService } from './../group.service';
+import { Group } from './../group.model';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-group',
@@ -7,9 +10,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateGroupComponent implements OnInit {
 
-  constructor() { }
+  group:Group = {
+    title: ''
+  }
+
+  constructor(
+    private groupService: GroupService,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
   }
 
+  createGroup(): void{
+    this.groupService.create(this.group).subscribe(() => {
+      // TODO: Exibir mensagem
+      this.router.navigate(['/'])
+    })
+  }
 }

@@ -2,8 +2,19 @@
   <form>
     <div class="form-group">
       <label for="groupTitle">Nome do novo grupo</label>
-      <input class="form-control" id="groupTitle" type="text">
+      <input
+        [(ngModel)] = "group.title"
+        class="form-control"
+        id="groupTitle"
+        type="text"
+        name="groupTitle">
     </div>
-    <button type="submit" class="btn btn-primary">Criar novo grupo</button>
+    <button
+      type="submit"
+      class="btn btn-primary"
+      (click)="createGroup()"
+    >
+      Criar novo grupo
+    </button>
   </form>
 </div>
