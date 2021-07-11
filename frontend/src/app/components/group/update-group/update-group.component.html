@@ -2,8 +2,20 @@
   <form>
     <div class="form-group">
       <label for="groupTitle">Novo nome do grupo</label>
-      <input class="form-control" id="groupTitle" type="text">
+      <input
+        class="form-control"
+        id="groupTitle"
+        type="text"
+        [(ngModel)]="group.title"
+        name="title"
+      >
     </div>
-    <button type="submit" class="btn btn-primary">Modificar nome</button>
+    <button
+      (click) = "update()"
+      type="submit"
+      class="btn btn-primary"
+    >
+      Modificar
+    </button>
   </form>
 </div>
