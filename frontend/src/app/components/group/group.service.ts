@@ -33,8 +33,12 @@ export class GroupService {
 
   update(group: Group): Observable<Group> {
     const url = `${this.baseUrl}/${group.id}`
-    console.log("BATATA")
     return this.http.put<Group>(url, group)
+  }
+
+  delete(id: any): Observable<Group> {
+    const url = `${this.baseUrl}/${id}`
+    return this.http.delete<Group>(url)
   }
 
 }

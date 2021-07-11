@@ -1,3 +1,5 @@
+import { GroupService } from './../group.service';
+import { Router } from '@angular/router';
 import { Component, OnInit, Input } from '@angular/core';
 import { Group } from '../group.model';
 
@@ -12,9 +14,19 @@ export class GroupElementComponent implements OnInit {
   title: ''
 }
 
-  constructor() { }
+  constructor(
+    private groupService: GroupService,
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  deleteGroup(): void {
+    this.groupService.delete(this.group.id).subscribe(() => {
+      //TODO Deletar todas as tasks pertencentes ao grupo
+      this.router.navigate(['/']);
+    });
   }
 
 }

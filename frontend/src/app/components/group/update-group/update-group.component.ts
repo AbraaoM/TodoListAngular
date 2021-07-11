@@ -10,7 +10,7 @@ import { Group } from '../group.model';
 })
 export class UpdateGroupComponent implements OnInit {
   group: Group = {
-    title: 'TESTE'
+    title: ''
   }
 
   constructor(
