@@ -1,1 +1,16 @@
-<p>read-group works!</p>
+<div class="navigator">
+  <ul ngbNav #nav="ngbNav"
+    class="nav-pills"
+    orientation="vertical"
+  >
+    <li
+      *ngFor = "let group of groups"
+      ngbNavItem=""
+    >
+      <a ngbNavLink>
+        <app-group-element
+          [group] = "group"
+        ></app-group-element>
+      </a>
+    </li>
+  </ul>

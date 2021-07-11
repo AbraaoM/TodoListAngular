@@ -18,4 +18,10 @@ create(group: Group): Observable<Group>{
   )
 }
 
+read(): Observable<Group[]>{
+  return this.http.get<Group[]>(
+    this.baseUrl
+  )
+}
+
 }

@@ -1,3 +1,5 @@
+import { GroupService } from './../group.service';
+import { Group } from './../group.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReadGroupComponent implements OnInit {
 
-  constructor() { }
+  groups: Group[] = []
+
+  constructor(private groupService: GroupService) { }
 
   ngOnInit(): void {
+    this.groupService.read().subscribe(groups => {
+      this.groups = groups
+    })
   }
 
 }

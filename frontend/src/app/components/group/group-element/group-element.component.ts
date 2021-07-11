@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Group } from '../group.model';
 
 @Component({
   selector: 'app-group-element',
@@ -6,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./group-element.component.css']
 })
 export class GroupElementComponent implements OnInit {
-  groupTitle: string = 'Título do grupo'
+
+@Input() group: Group = {
+  title: ''
+}
 
   constructor() { }
 

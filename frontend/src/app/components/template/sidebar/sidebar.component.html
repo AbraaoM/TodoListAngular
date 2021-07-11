@@ -7,27 +7,7 @@
   >
     <button type="button" class="btn btn-primary">Novo Grupo</button>
   </div>
-  <div class="navigator">
-    <ul ngbNav #nav="ngbNav"
-      [(activeId)]="active"
-      class="nav-pills"
-      orientation="vertical"
-    >
-      <li ngbNavItem="top">
-
-        <a ngbNavLink>
-          <app-group-element></app-group-element>
-        </a>
-      </li>
-      <li ngbNavItem="middle">
-        <a ngbNavLink>Middle</a>
-
-      </li>
-      <li ngbNavItem="bottom">
-        <a ngbNavLink>Bottom</a>
-
-      </li>
-    </ul>
+  <app-read-group></app-read-group>
 </div>
 
 
