@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./task-infos.component.css']
 })
 export class TaskInfosComponent implements OnInit {
+  taskTitle: string = 'Tarefa Genérica'
+  daysFromCreation: number = 2
+  creationPeriod: string = 'tarde'
+  conclusionDate: string = '21/02/1994'
+
 
   constructor() { }
 
