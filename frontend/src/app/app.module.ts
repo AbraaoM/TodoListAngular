@@ -16,6 +16,7 @@ import { UpdateTaskComponent } from './components/task/update-task/update-task.c
 import { CreateTaskComponent } from './components/task/create-task/create-task.component';
 import { TaskInfosComponent } from './components/task/task-infos/task-infos.component';
 import { GroupInfosComponent } from './components/group/group-infos/group-infos.component';
+import { HttpClientModule } from  '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { GroupInfosComponent } from './components/group/group-infos/group-infos.
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    IconsModule
+    IconsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
