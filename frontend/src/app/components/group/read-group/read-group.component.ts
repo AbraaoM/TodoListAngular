@@ -18,5 +18,4 @@ export class ReadGroupComponent implements OnInit {
       this.groups = groups
     })
   }
-
 }

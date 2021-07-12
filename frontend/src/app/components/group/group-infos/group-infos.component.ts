@@ -40,18 +40,28 @@ export class GroupInfosComponent implements OnInit {
         if(elem.groupId == this.group.id){
           this.tasks.push(elem)
           this.nTasks++
+
+          const today: Date = new Date()
+          let time: Date = new Date(elem.creationTime)
+          if(time.getHours() >= 0 && time.getHours() < 12){
+            //manha
+            this.nTasksMorning++
+          }else if (time.getHours() >= 12 && time.getHours() < 18){
+            //tarde
+            this.nTasksEvening++
+          }else{
+            //noite
+            this.nTasksNight++
+          }
+
+          if(time.getMonth === today.getMonth){
+            this.nTasksMonth++
+          }
         }
       })
     })
   }
 
-  // readTaskOnGroup(){
-  //   this.taskService.read().subscribe((tasksRead) => {
-  //     let task: any
-  //     for(task in tasksRead){
-  //       this.tasks = task
-  //     }
-  //   })
-  // }
+
 
 }
