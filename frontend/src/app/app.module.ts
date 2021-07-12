@@ -19,6 +19,7 @@ import { GroupInfosComponent } from './components/group/group-infos/group-infos.
 import { HttpClientModule } from  '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ReadGroupComponent } from './components/group/read-group/read-group.component';
+import { NotFoundComponent } from './views/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ReadGroupComponent } from './components/group/read-group/read-group.com
     CreateTaskComponent,
     TaskInfosComponent,
     GroupInfosComponent,
-    ReadGroupComponent
+    ReadGroupComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

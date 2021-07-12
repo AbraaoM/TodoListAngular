@@ -8,8 +8,13 @@ import { InfosComponent } from './views/infos/infos.component';
 import { HomeComponent } from './views/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { NotFoundComponent } from './views/not-found/not-found.component';
 
 const routes: Routes = [
+  {
+    path:'**',
+    component: NotFoundComponent
+  },
   {
     path:"",
     component: HomeComponent
