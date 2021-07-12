@@ -11,6 +11,9 @@
         name="taskTitle"
       >
     </div>
+    <ngb-alert *ngIf="showMessage" [type]="messageType">
+      {{message}}
+    </ngb-alert>
     <button
     type="submit"
     class="btn btn-primary"
