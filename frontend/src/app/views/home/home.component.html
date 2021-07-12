@@ -1,20 +1,13 @@
 <div class="container">
   <h2 class="text-center p-3">Ultimas 10 tarefas criadas</h2>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">
-      <app-task-element></app-task-element>
-    </li>
-    <li class="list-group-item">
-      <app-task-element></app-task-element>
-    </li>
-    <li class="list-group-item">
-      <app-task-element></app-task-element>
-    </li>
-    <li class="list-group-item">
-      <app-task-element></app-task-element>
-    </li>
-    <li class="list-group-item">
-      <app-task-element></app-task-element>
+    <li
+      *ngFor="let task of tasks"
+      class="list-group-item"
+    >
+      <app-task-element
+        [task] = "task"
+      ></app-task-element>
     </li>
   </ul>
 </div>
