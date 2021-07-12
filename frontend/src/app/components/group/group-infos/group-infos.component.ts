@@ -36,12 +36,10 @@ export class GroupInfosComponent implements OnInit {
     });
 
     this.taskService.read().subscribe((tasksRead) => {
-      console.log("TEST")
       tasksRead.forEach((elem) => {
-        console.log(elem)
-        console.log(this.group)
         if(elem.groupId == this.group.id){
           this.tasks.push(elem)
+          this.nTasks++
         }
       })
     })
