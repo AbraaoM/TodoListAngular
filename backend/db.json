@@ -1,28 +1,56 @@
 {
   "group": [
     {
-      "id": 1,
-      "title": "Um grupo"
+      "title": "Compras no mercado",
+      "id": 1
     },
     {
-      "id": 2,
-      "title": "Um grupo"
+      "title": "Mecânico",
+      "id": 2
     }
   ],
   "task": [
     {
-      "id": 1,
-      "groupId": 1,
-      "title": "Uma task",
-      "creationTime": "B",
-      "conclusionTime": "F"
+      "title": "Cenoura",
+      "creationTime": "Mon Jul 12 2021 08:36:19 GMT-0300 (Horário Padrão de Brasília)",
+      "conclusionTime": "",
+      "groupId": "1",
+      "id": 1
     },
     {
-      "id": 2,
-      "groupId": 1,
-      "title": "Duas tasks",
-      "creationTime": "B",
-      "conclusionTime": "F"
+      "title": "Batata",
+      "creationTime": "Mon Jul 12 2021 18:36:19 GMT-0300 (Horário Padrão de Brasília)",
+      "conclusionTime": "",
+      "groupId": "1",
+      "id": 2
+    },
+    {
+      "title": "Leite",
+      "creationTime": "Mon Jul 12 2021 15:36:19 GMT-0300 (Horário Padrão de Brasília)",
+      "conclusionTime": "",
+      "groupId": "1",
+      "id": 3
+    },
+    {
+      "title": "Filtro de óleo",
+      "creationTime": "Mon Jul 12 2021 18:36:19 GMT-0300 (Horário Padrão de Brasília)",
+      "conclusionTime": "",
+      "groupId": "2",
+      "id": 4
+    },
+    {
+      "title": "Bateria",
+      "creationTime": "Mon Jul 12 2021 11:36:19 GMT-0300 (Horário Padrão de Brasília)",
+      "conclusionTime": "",
+      "groupId": "2",
+      "id": 5
+    },
+    {
+      "title": "Velas",
+      "creationTime": "Mon Jul 12 2021 18:36:19 GMT-0300 (Horário Padrão de Brasília)",
+      "conclusionTime": "",
+      "groupId": "2",
+      "id": 6
     }
   ]
 }
