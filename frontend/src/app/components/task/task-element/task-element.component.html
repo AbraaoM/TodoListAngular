@@ -1,6 +1,9 @@
 <div class="task-element d-flex align-items-center justify-content-between bg-light border border-primary rounded">
   <div class="task-title text-primary"
     routerLink="/task/infos/{{task.id}}"
+    id="task-element-{{task.id}}"
+    style="text-decoration: line-through;"
+    [ngStyle] = "{'text-decoration': (task.conclusionTime !== '') ? 'line-through' : 'none'}"
   >
     {{task.title}}
   </div>
@@ -8,6 +11,7 @@
     class="text-primary d-flex justify-content-between"
     style="width: 25%; padding: 5%;"
   >
+  <bi name="check2-square" (click)="concludeTask()"></bi>
   <bi name="trash" (click)="deleteTask()"></bi>
   <bi name="pen" routerLink="/task/update/{{task.id}}"></bi>
   </div>

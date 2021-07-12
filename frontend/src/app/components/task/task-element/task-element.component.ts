@@ -1,5 +1,5 @@
 import { TaskService } from './../task.service';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnInit } from '@angular/core';
 import { Task } from '../task.model'
 import { Router } from '@angular/router';
 
@@ -22,6 +22,7 @@ export class TaskElementComponent implements OnInit {
     ) { }
 
     ngOnInit(): void {
+
     }
 
     deleteTask(): void {
@@ -29,6 +30,18 @@ export class TaskElementComponent implements OnInit {
         //TODO Deletar todas as tasks pertencentes ao grupo
         this.router.navigate(['/']);
       });
+    }
+
+    concludeTask(): void {
+      this.task.conclusionTime = Date()
+      this.taskService.update(this.task).subscribe()
+
+      const elementId: string = `task-element-${this.task.id}`
+      const element = document.getElementById(elementId)
+      console.log(element)
+      element != null ?
+        element.style.textDecoration = 'line-through' :
+        null
     }
 
   }
