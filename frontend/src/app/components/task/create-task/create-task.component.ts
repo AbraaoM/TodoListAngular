@@ -35,6 +35,8 @@ export class CreateTaskComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.task.creationTime = Date()
+
     const gid: any = this.route.snapshot.paramMap.get("gid")
     this.groupService.readById(gid).subscribe((group) => {
       this.group = group;
