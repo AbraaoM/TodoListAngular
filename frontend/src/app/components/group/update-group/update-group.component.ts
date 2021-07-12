@@ -23,13 +23,13 @@ export class UpdateGroupComponent implements OnInit {
     const id: any = this.route.snapshot.paramMap.get("id")
     this.groupService.readById(id).subscribe((group) => {
       this.group = group;
-    });
+    })
   }
 
   update(): void {
     this.groupService.update(this.group).subscribe(() => {
       const url: string = `group/infos/${this.group.id}`
       this.router.navigate([url]);
-    });
+    })
   }
 }

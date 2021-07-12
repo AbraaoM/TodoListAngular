@@ -31,7 +31,7 @@ const routes: Routes = [
     component: GroupInfosComponent
   },
   {
-    path:"task/create",
+    path:"task/create/:gid",
     component: CreateTaskComponent
   },
   {

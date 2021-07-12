@@ -8,26 +8,19 @@
     <div class="d-flex justify-content-center">
       <button type="button"
         class="btn btn-primary"
-        routerLink="/task/create"
+        routerLink="/task/create/{{group.id}}"
       >
         Nova Task
       </button>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">
-        <app-task-element></app-task-element>
-      </li>
-      <li class="list-group-item">
-        <app-task-element></app-task-element>
-      </li>
-      <li class="list-group-item">
-        <app-task-element></app-task-element>
-      </li>
-      <li class="list-group-item">
-        <app-task-element></app-task-element>
-      </li>
-      <li class="list-group-item">
-        <app-task-element></app-task-element>
+      <li
+        *ngFor="let task of tasks"
+        class="list-group-item"
+      >
+        <app-task-element
+          [task] = "task"
+        ></app-task-element>
       </li>
     </ul>
   </div>

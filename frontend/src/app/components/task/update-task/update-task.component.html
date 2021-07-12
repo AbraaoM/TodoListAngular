@@ -1,9 +1,21 @@
 <div class="p-5">
   <form>
     <div class="form-group">
-      <label for="taskTitle">Altere o nome da tarefa</label>
-      <input class="form-control" id="groupTitle" type="text">
+      <label for="groupTitle">Novo nome da tarefa</label>
+      <input
+        class="form-control"
+        id="groupTitle"
+        type="text"
+        [(ngModel)]="task.title"
+        name="title"
+      >
     </div>
-    <button type="submit" class="btn btn-primary">Alterar</button>
+    <button
+      (click) = "update()"
+      type="submit"
+      class="btn btn-primary"
+    >
+      Modificar
+    </button>
   </form>
 </div>

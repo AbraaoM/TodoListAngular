@@ -1,10 +1,22 @@
 <div class="p-5">
-  <h2>Adicionando nova tarefa ao grupo <strong>{{groupName}}</strong></h2>
+  <h2>Adicionando nova tarefa ao grupo <strong>{{group.title}}</strong></h2>
   <form>
     <div class="form-group">
       <label for="taskTitle">Nome da nova tarefa</label>
-      <input class="form-control" id="groupTitle" type="text">
+      <input
+        [(ngModel)] = "task.title"
+        class="form-control"
+        id="groupTitle"
+        type="text"
+        name="taskTitle"
+      >
     </div>
-    <button type="submit" class="btn btn-primary">Criar nova tarefa</button>
+    <button
+    type="submit"
+    class="btn btn-primary"
+    (click)="createTask()"
+  >
+    Criar
+  </button>
   </form>
 </div>

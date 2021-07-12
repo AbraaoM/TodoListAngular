@@ -1,7 +1,9 @@
+import { TaskService } from './../../task/task.service';
 import { Group } from './../group.model';
 import { GroupService } from './../group.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Task } from '../../task/task.model'
 
 @Component({
   selector: 'app-group-infos',
@@ -13,6 +15,7 @@ export class GroupInfosComponent implements OnInit {
   group: Group = {
     title: ''
   }
+  tasks: Task[] = []
 
   nTasks: number = 0
   nTasksMonth: number = 0
@@ -21,6 +24,7 @@ export class GroupInfosComponent implements OnInit {
   nTasksNight: number = 0
 
   constructor(
+    private taskService: TaskService,
     private groupService: GroupService,
     private route: ActivatedRoute
   ) { }
@@ -30,6 +34,26 @@ export class GroupInfosComponent implements OnInit {
     this.groupService.readById(id).subscribe((group) => {
       this.group = group;
     });
+
+    this.taskService.read().subscribe((tasksRead) => {
+      console.log("TEST")
+      tasksRead.forEach((elem) => {
+        console.log(elem)
+        console.log(this.group)
+        if(elem.groupId == this.group.id){
+          this.tasks.push(elem)
+        }
+      })
+    })
   }
+
+  // readTaskOnGroup(){
+  //   this.taskService.read().subscribe((tasksRead) => {
+  //     let task: any
+  //     for(task in tasksRead){
+  //       this.tasks = task
+  //     }
+  //   })
+  // }
 
 }
