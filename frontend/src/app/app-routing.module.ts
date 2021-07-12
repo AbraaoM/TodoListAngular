@@ -11,10 +11,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NotFoundComponent } from './views/not-found/not-found.component';
 
 const routes: Routes = [
-  {
-    path:'**',
-    component: NotFoundComponent
-  },
+
   {
     path:"",
     component: HomeComponent
@@ -46,7 +43,12 @@ const routes: Routes = [
   {
     path:"task/infos/:id",
     component: TaskInfosComponent
-  }
+  },
+  {
+    path:'**',
+    pathMatch   : 'full',
+    component: NotFoundComponent
+  },
 ];
 
 @NgModule({
